@@ -33,7 +33,7 @@ int main() {
 
     div_1 = soma_S1 % 11; // divide o resultado da soma por 11 e pega o resto
    
-    //verifica se o resultado da divisão é 10 e, se sim, atribui o valor 0 ao digito vericador, senão, atribui o resultado da divisão à ele
+    //verifica se o resultado da divisão é 10 e, se sim, atribui o valor 0 ao digito vericador, senão, atribui o resultado da divisão por 11 a ele
 
     if (div_1 == 10) {
         dig_verificador1 = 0;
@@ -47,6 +47,7 @@ int main() {
     soma_S2 = (dig1 * 0 + dig2 * 1 + dig3 * 2 + dig4 * 3 + dig5 * 4 + dig6 * 5 + dig7 * 6 + dig8 * 7 + dig9 * 8 + dig_verificador1 * 9); // obtém a soma S do segundo dígito vericador
     div_2 = soma_S2 % 11; //obtém m resto da divisão por 11
     
+    //verifica se o resultado da divisão é 10 e, se sim, atribui o valor 0 ao digito vericador, senão, atribui o resultado da divisão por 11 a ele
     if (div_2 == 10) {
         dig_verificador2 = 0;
     } else {
