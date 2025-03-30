@@ -6,7 +6,7 @@ int main() {
     int dig_verificador1, dig_verificador2; // digitos verificadores
     int soma_S1, soma_S2, div_1,  div_2; // somas e divisões
     
-    //mostra um mensagem que pede os  dígitos do Registro separadamente
+    //mostra uma mensagem que pede os  dígitos do Registro separadamente
     printf("Digite os dígitos do seu Registro Individual para que o programa calcule os digitos vericadores dele\n");
     scanf("%d",&registro);
     // Desmembra o registro em dígitos
@@ -45,7 +45,7 @@ int main() {
     } else {
         dig_verificador2 = div_2;
     }
-    // fim  calculo segundo digitosegundo dígito
+    // fim  calculo segundo do segundo dígito vericador
 
     // mostra o Registro Individual com os dígitos vericadores
     printf("O seu Registro Individual e: \n %d%d%d%d%d%d%d%d%d/%d%d", dig1, dig2, dig3, dig4, dig5,dig6,dig7,dig8,dig9, dig_verificador1, dig_verificador2);
