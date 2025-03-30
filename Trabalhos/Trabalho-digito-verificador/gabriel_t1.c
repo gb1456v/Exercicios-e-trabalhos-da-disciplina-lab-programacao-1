@@ -2,32 +2,24 @@
 
 int main() {
     //declaração de variáveis
-    int dig1, dig2,dig3,dig4,dig5,dig6,dig7,dig8,dig9; //digitos do Registro
+    int registro, dig1, dig2, dig3, dig4, dig5, dig6, dig7, dig8, dig9; // variáveis para o registro e os dígitos
     int dig_verificador1, dig_verificador2; // digitos verificadores
     int soma_S1, soma_S2, div_1,  div_2; // somas e divisões
     
     //mostra um mensagem que pede os  dígitos do Registro separadamente
-    printf("Digite os dígitos do seu Registro Individual conforme forem solicitados para que o programa calcule os digitos vericadores dele\n");
-    //pede cada um dos dígitos
-    printf("Digite o 1o digito:\n");
-    scanf("%d",&dig1);
-    printf("Digite o 2o digito:\n");
-    scanf("%d",&dig2);
-    printf("Digite o 3o digito:\n");
-    scanf("%d",&dig3);
-    printf("Digite o 4o digito:\n");
-    scanf("%d",&dig4);
-    printf("Digite o 5o digito:\n");
-    scanf("%d",&dig5);
-    printf("Digite o 6o digito:\n");
-    scanf("%d",&dig6);
-    printf("Digite o 7o digito:\n");
-    scanf("%d",&dig7);
-    printf("Digite o 8o digito:\n");
-    scanf("%d",&dig8);
-    printf("Digite o 9o digito:\n");
-    scanf("%d",&dig9);
-
+    printf("Digite os dígitos do seu Registro Individual para que o programa calcule os digitos vericadores dele\n");
+    scanf("%d",&registro);
+    // Desmembra o registro em dígitos
+    dig1 = registro / 100000000; // pega o primeiro dígito do registro
+    dig2 = (registro / 10000000) % 10; // pega o segundo dígito do registro
+    dig3 = (registro / 1000000) % 10; // pega o terceiro dígito do registro
+    dig4 = (registro / 100000) % 10; // pega o quarto dígito do registro
+    dig5 = (registro / 10000) % 10; // pega o quinto dígito do registro
+    dig6 = (registro / 1000) % 10; // pega o sexto dígito do registro
+    dig7 = (registro / 100) % 10; // pega o sétimo dígito do registro
+    dig8 = (registro / 10) % 10; // pega o oitavo dígito do registro
+    dig9 = registro % 10; // pega o nono dígito do registro
+    
     // calculo do primeiro dígito verificador
     soma_S1 = (dig1 * 1 + dig2 * 2 + dig3 * 3 + dig4 * 4 + dig5 * 5 + dig6 * 6 + dig7 * 7 + dig8 * 8 + dig9 * 9); // obtém a soma S do primeiro dígito vericador
 
