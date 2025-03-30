@@ -46,7 +46,6 @@ int main() {
         dig_verificador2 = div_2;
     }
     // fim  calculo segundo do segundo dígito vericador
-
     // mostra o Registro Individual com os dígitos vericadores
     printf("O seu Registro Individual e: \n %d%d%d%d%d%d%d%d%d/%d%d", dig1, dig2, dig3, dig4, dig5,dig6,dig7,dig8,dig9, dig_verificador1, dig_verificador2);
 }
