@@ -24,28 +24,24 @@ int main() {
     soma_S1 = (dig1 * 1 + dig2 * 2 + dig3 * 3 + dig4 * 4 + dig5 * 5 + dig6 * 6 + dig7 * 7 + dig8 * 8 + dig9 * 9); // obtém a soma S do primeiro dígito vericador
 
     div_1 = soma_S1 % 11; // divide o resultado da soma por 11 e pega o resto
-   
-    //verifica se o resultado da divisão é 10 e, se sim, atribui o valor 0 ao digito vericador, senão, atribui o resultado da divisão por 11 a ele
 
-    if (div_1 == 10) {
-        dig_verificador1 = 0;
-    } else {
-        dig_verificador1 = div_1;
-    }
     //fim calculo do primeiro dígito vericador
 
     //calculo do segundo dígito vericador
     
     soma_S2 = (dig1 * 0 + dig2 * 1 + dig3 * 2 + dig4 * 3 + dig5 * 4 + dig6 * 5 + dig7 * 6 + dig8 * 7 + dig9 * 8 + dig_verificador1 * 9); // obtém a soma S do segundo dígito vericador
     div_2 = soma_S2 % 11; //obtém m resto da divisão por 11
-    
-    //verifica se o resultado da divisão é 10 e, se sim, atribui o valor 0 ao digito vericador, senão, atribui o resultado da divisão por 11 a ele
-    if (div_2 == 10) {
+    // fim  calculo segundo do segundo dígito vericador
+
+    //verifica se os resultados das divisões por 11 são iguais a 10 e, se sim, atribui o valor 0 aos dois dígitos vericadores, senão, atribui o resultado das divisões por 11 aos dígitos verificadores
+    if ((div_2 == 10) && (div_1 == 10)) {
+        dig_verificador1 = 0;
         dig_verificador2 = 0;
     } else {
-        dig_verificador2 = div_2;
+        dig_verificador1 = div_1;
+        dig_verificador2 = div_2; 
     }
-    // fim  calculo segundo do segundo dígito vericador
+
     // mostra o Registro Individual com os dígitos vericadores
     printf("O seu Registro Individual e: \n %d%d%d%d%d%d%d%d%d/%d%d", dig1, dig2, dig3, dig4, dig5,dig6,dig7,dig8,dig9, dig_verificador1, dig_verificador2);
 }
