@@ -5,11 +5,8 @@ int main() {
     int b= 2;
     int c;
     float d;
-    c = (float)a/(float)b;
-    d= (float)c;
-
-
-    printf("O valor de d e: %.2f", d);
-    
-
+    c = a/b;
+    d =(float)a/(float)b;
+    printf("O valor de c e: %i \n", c);
+    printf("O valor de d e: %.2f \n", d);
 }

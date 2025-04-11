@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/workspaces/Exercicios-logica-ufsm/Exercicios/aula-4/lista-exercicios",
-      "program": "/workspaces/Exercicios-logica-ufsm/Exercicios/aula-4/lista-exercicios/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "f:/Users/gabri/OneDrive/Documentos/Material-da-faculdade/Laboratorio-de-programacao/Exercicios-e-trabalhos-da-disciplina-lab-programacao-1/Exercicios/aula-4/lista-exercicios",
+      "program": "f:/Users/gabri/OneDrive/Documentos/Material-da-faculdade/Laboratorio-de-programacao/Exercicios-e-trabalhos-da-disciplina-lab-programacao-1/Exercicios/aula-4/lista-exercicios/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
