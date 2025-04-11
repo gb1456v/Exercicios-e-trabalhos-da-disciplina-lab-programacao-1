@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main {
+int main() {
     // programa que converte a velocidade de m/s para km/h
     float velocidade, resultado;
     

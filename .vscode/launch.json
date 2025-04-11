@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/Exercicios-logica-ufsm/Exercicios/aula-3",
-      "program": "/workspaces/Exercicios-logica-ufsm/Exercicios/aula-3/build/Debug/outDebug",
+      "cwd": "/workspaces/Exercicios-logica-ufsm/Exercicios/aula-4/lista-exercicios",
+      "program": "/workspaces/Exercicios-logica-ufsm/Exercicios/aula-4/lista-exercicios/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

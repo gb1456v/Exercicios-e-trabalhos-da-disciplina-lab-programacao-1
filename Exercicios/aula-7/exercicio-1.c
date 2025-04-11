@@ -2,18 +2,17 @@
 
 int main() {
     int intervalo_inicio,intervalo_fim;
-    int i=0, soma=0,cont=0;
-    printf("Digite o valor do ínicio do intervalo");
+    int i, soma;
+    printf("Digite o valor do ínicio do intervalo"); //1
     scanf("%d", &intervalo_inicio);
-    printf("Digite o valor do fim do intervalo");
+    printf("Digite o valor do fim do intervalo"); //10
     scanf("%d", &intervalo_fim);
     for(i=intervalo_inicio; i<intervalo_fim; i++) {
-        cont++; // 1
-        if(                                                                                                              % 2 == 1) {
-
-            soma = soma + cont;
+         if(i % 2 == 1) {
+            printf("impares: ", i);
+            soma = soma + i;
+            printf("A soma dos numeros impares dá ", soma);
         }
-    printf("A soma dos ")
-    }
+    } 
 
 }
