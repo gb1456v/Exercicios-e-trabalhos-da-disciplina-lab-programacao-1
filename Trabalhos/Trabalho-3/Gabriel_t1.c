@@ -54,12 +54,16 @@ int ordenar_tres_numeros(n1,n2,n3) {
             return ordem_escolhida;
     }
 }
-
+int exibe_Pontuacao(int pontos_ganhos) {
+    printf("Você ganhou %d nesta rodada!", pontos_ganhos);
+    
+}
 int main() {
     int n1,n2,n3,qtd_dados,modo_de_jogo;
     int numero_jogado1, numero_jogado2,numero_jogado3, dois_numeros_ordenados, tres_numeros_ordenados;
     int primeira_jogada;
-    int pontos_ganhos;
+    int pontos_ganhos; 
+    int total_pontos_1 = 999,total_pontos_2 = 999;
     char nick_player_1[25];
     char nick_player_2[25];
     int inicio;
@@ -73,48 +77,55 @@ int main() {
     scanf("%d",&modo_de_jogo);
     switch(modo_de_jogo) {
         case 1: 
+        printf("Voce escolheu jogar com outra pessoa!";)
         printf(" Digite o nickname do jogador 2\n");
         scanf("%c", nick_player_2);
+
         printf("Quem começa o jogo? Digite 1 para %c e 2 para %c\n", nick_player_1, nick_player_2);
         scanf("%d", &inicio);
         if(inicio == 1) {
-            //o player 1 começa
             printf("O %c comeca!\n", nick_player_1);
             printf("Pontuacao %c: %d \n Pontuacao %c: %d\n,", nick_player_1, nick_player_2);
-            printf("Esta e a primeira jogada do jogo? Digite 1 para sim e 2 para nao");
+            printf("Esta e a sua primeira jogada? Digite 1 para sim e 2 para nao");
             if(primeira_jogada == 1) {
                 numero_jogado1 = jogar_dado();
                 numero_jogado2 = jogar_dado();
                 numero_jogado3 = jogar_dado();
                 tres_numeros_ordenados = ordenar_tres_numeros(numero_jogado1,numero_jogado2,numero_jogado3);
-                pontos_ganhos = 999 - tres_numeros_ordenados;
+                pontos_ganhos =  total_pontos_1 - numero_ordenado;
+                total_pontos_1 = pontos_ganhos;
+
             } else {
+                while(pontos_total_player_1)
                 printf("Digite 1 para jogar somente um dado, 2 para jogar dois dados e 3 para jogar três dados\n");
                 scanf("%d", &qtd_dados);
-                    switch(qtd_dados) {
-                        case 1:
-                        numero_jogado1 = jogar_dado();
-                        pontos_ganhos = numero_jogado1 - 999;
-                        
-                        case 2: 
-                        numero_jogado1 = jogar_dado();
-                        numero_jogado2 = jogar_dado();
-                        dois_numeros_ordenados = 
-                        ordenar_dois_numeros(numero_jogado1, numero_jogado2);
-                        pontos_ganhos = 999 - dois_numeros_ordenados;
-                        case 3: 
-                        numero_jogado1 = jogar_dado();
-                        numero_jogado2 = jogar_dado();
-                        numero_jogado3 = jogar_dado();
-                        tres_numeros_ordenados = 
-                        ordenar_tres_numeros(numero_jogado1, numero_jogado2,numero_jogado3);
-                        pontos_ganhos = 999 - tres_numeros_ordenados;
-                    }
-                
+                    while(pontos_atuais < 0 ) {
+                        switch(qtd_dados) {
+                            case 1:
+                            numero_jogado1 = jogar_dado();
+                            pontos_ganhos = pontos_atuais - numero_jogado1;
+                            pontos_ganhos =  total_pontos_1 - numero_jogado1;
+                            case 2: 
+                            numero_jogado1 = jogar_dado();
+                            numero_jogado2 = jogar_dado();
+                            dois_numeros_ordenados = 
+                            ordenar_dois_numeros(numero_jogado1, numero_jogado2);
+                            pontos_ganhos =  total_pontos_1 - numero_ordenado;
+                            total_pontos_1 = pontos_ganhos;
+
+                            numero_jogado1 = jogar_dado();
+                            numero_jogado2 = jogar_dado();
+                            numero_jogado3 = jogar_dado();
+                            tres_numeros_ordenados = 
+                            ordenar_tres_numeros(numero_jogado1, numero_jogado2,numero_jogado3);
+                            pontos_ganhos =  total_pontos_1 - numero_ordenado;
+                            total_pontos_1 = pontos_ganhos;
+                            exibe_Pontuacao(pontos_ganhos);
+                        }
+                    }    
                 }
             }
             } else if(inicio == 2) {
-                // o player dois começa
                 printf("O %c comeca!\n", nick_player_2);
                 printf("Pontuacao %c: %d \n Pontuacao %c: %d\n,", nick_player_1, pontos_total_player_1, nick_player_2, pontos_total_player_2);
                 printf("Esta e a primeira jogada do jogo? Digite 1 para sim e 2 para nao");
