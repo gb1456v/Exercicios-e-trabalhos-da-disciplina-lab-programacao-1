@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/Users/gabri/OneDrive/Documentos/Material-da-faculdade/Laboratorio-de-programacao/Exercicios-e-trabalhos-da-disciplina-lab-programacao-1/Exercicios/aula-4/lista-exercicios",
-      "program": "f:/Users/gabri/OneDrive/Documentos/Material-da-faculdade/Laboratorio-de-programacao/Exercicios-e-trabalhos-da-disciplina-lab-programacao-1/Exercicios/aula-4/lista-exercicios/build/Debug/outDebug",
+      "cwd": "f:/Users/gabri/OneDrive/Documentos/Material-da-faculdade/Laboratorio-de-programacao/Exercicios-e-trabalhos-da-disciplina-lab-programacao-1/Trabalhos/Trabalho-3",
+      "program": "f:/Users/gabri/OneDrive/Documentos/Material-da-faculdade/Laboratorio-de-programacao/Exercicios-e-trabalhos-da-disciplina-lab-programacao-1/Trabalhos/Trabalho-3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
